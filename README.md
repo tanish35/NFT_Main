@@ -20,3 +20,12 @@ Here the NFTs to trade are available.<br>
 <br>
 <img width="1440" alt="Screenshot 2024-02-22 at 9 58 55 PM" src="https://github.com/Somnath-Web-Developer/NFT-Marketplace/assets/135858837/d30ea612-bb8a-4585-bc70-5ed4e62844bc">
 This the page where NFT can be mint in the form of an image of .png format.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h2>TOKEN_LUMINA folder is the code for the cyptotoken LUMINA.</h2>
