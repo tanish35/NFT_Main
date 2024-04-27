@@ -72,7 +72,7 @@
 import React, { useEffect, useState } from "react";
 import logo from "../../assets/logo.png";
 import homeImage from "../../assets/home-img.png";
-import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Minter from "./Minter";
 import Gallery from "./Gallery";
 import { opend } from "../../../declarations/opend";
@@ -125,16 +125,14 @@ function Header() {
           </div>
         </header>
       </div>
-      <Switch>
-        <Route exact path="/">
-          <img className="bottom-space" src={homeImage} />
-        </Route>
-        <Route path="/discover">{listingGallery}</Route>
-        <Route path="/minter">
-          <Minter />
-        </Route>
-        <Route path="/collection">{userOwnedGallery}</Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/"
+          element={<img className="bottom-space" src={homeImage} alt="Home" />} />
+
+        <Route path="/discover" element={listingGallery} />
+        <Route path="/minter" element={<Minter />} />
+        <Route path="/collection" element={userOwnedGallery} />
+      </Routes>
     </BrowserRouter>
   );
 }
